@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap')
+
+.container
+    max-width: 1180px
+    margin: 0 auto
+    font-family: 'DM Sans', sans-serif
+    padding: 86px 0
+
+.flex-container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.text-block
+    min-width: 570px
+    &__title
+        font-size: 44px
+        line-height: 54px
+        margin-bottom: -5px
+    &__description
+        font-size: 18px
+        line-height: 28px
+        max-width: 360px
+        letter-spacing: 0.3px
+
+.card
+    color: #0F0F0F
+    max-width: 270px
+    border: 1px solid #E8E8E8
+    border-radius: 18px
+    padding: 28px 28px 14px 28px
+    margin-bottom: 30px
+    box-sizing: border-box
+    &__icon
+        width: 55px
+        height: 55px
+        background: #2A2A2A
+        background-repeat: no-repeat
+        background-position: center
+        border-radius: 12px
+        &_one
+            background-image: url("../img/Path-1.svg")
+        &_two
+            background-image: url("../img/Path-2.svg")
+        &_three
+            background-image: url("../img/Path-3.svg")
+        &_four
+            background-image: url("../img/Path-4.svg")
+        &_five
+            background-image: url("../img/Path-5.svg")
+        &_six
+            background-image: url("../img/Path-6.svg")
+    &__title
+        font-family: 'DMSans-Medium', sans-serif
+        font-size: 22px
+        line-height: 28px
+        max-width: 185px
+        margin-bottom: -5px
+    &__description
+        font-size: 14px
+        line-height: 24px
+.bold 
+    font-weight: 700
+
+@media screen and (max-width: 1180px) 
+    .container
+        max-width: 600px
+    .text-block
+        margin-bottom: 30px
+        &__description
+            max-width: none
+
+@media screen and (max-width: 580px) 
+    .container
+        padding: 0 22px
+    .text-block
+        min-width: auto
+        &__title
+            font-size: 35px
+            line-height: 45px
+        &__description
+            font-size: 16px
+            line-height: 24px
+    .card
+        max-width: 100%
+        display: flex
+        flex-wrap: wrap
+        &__title
+            margin: 0 0 0 22px
+
+@media screen and (max-width: 365px)
+    .card
+        padding: 10px
+        align-items: center
+        &__icon
+            width: 40px
+            height: 40px
